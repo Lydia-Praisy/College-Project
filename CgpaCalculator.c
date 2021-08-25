@@ -144,6 +144,49 @@ switch(sem)
     float cgpa2 = (float)Gpa2 / (float)totalCredits1;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa2);
     break;
+
+    case 4:
+    printf("\t\n Enter the grade for MA8402 : ");
+    scanf("%d",&MA8402);
+    MA8402 = CalculateSubjectGpa(4,MA8402);
+    
+    printf("\t\n Enter the grade for CS8491 : ");
+    scanf("%d",&CS8491);
+    CS8491 = CalculateSubjectGpa(3,CS8491);
+    
+    printf("\t\n Enter the grade for CS8492 : ");
+    scanf("%d",&CS8492);
+    CS8492 = CalculateSubjectGpa(3,CS8492);
+    
+    printf("\t\n Enter the grade for CS8451 : ");
+    scanf("%d",&CS8451);
+    CS8451 = CalculateSubjectGpa(3,CS8451);
+    
+    printf("\t\n Enter the grade for CS8493 : ");
+    scanf("%d",&CS8493);
+    CS8493 = CalculateSubjectGpa(3,CS8493);
+    
+    printf("\t\n Enter the grade for CS8494 : ");
+    scanf("%d",&CS8494);
+    CS8494 = CalculateSubjectGpa(3,CS8494);
+    
+    printf("\t\n Enter the grade for CS8481 : ");
+    scanf("%d",&CS8481);
+    CS8481 = CalculateSubjectGpa(2,CS8481);
+    
+    printf("\t\n Enter the grade for CS8461 : ");
+    scanf("%d",&CS8461);
+    CS8461 = CalculateSubjectGpa(2,CS8461);
+    
+    printf("\t\n Enter the grade for HS8461 : ");
+    scanf("%d",HS8461);
+    HS8461 = CalculateSubjectGpa(1,HS8461);
+    
+    int Gpa3 = MA8402+CS8491+CS8492+CS8451+CS8493+CS8494+CS8481+CS8461+HS8461;
+    int totalCredits3 =4+3+3+3+3+3+2+2+1;
+    float cgpa3 = (float)Gpa3 / (float)totalCredits3;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa3);
+    break;
 }
 }
 
