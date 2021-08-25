@@ -57,8 +57,10 @@ switch(sem)
     
     int Gpa = HS8151+MA8151+PH8151+CY8151+GE8151+GE8152+GE8161+BS8161;
     int totalCredits =4+4+3+3+3+4+2+2;
-    float cgpa = Gpa / totalCredits;
-    printf("\n\n\n\n   Your CGPA is :%f ",cgpa);
+    float cgpa = (float)Gpa / (float)totalCredits;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa);
+    break;
+    
     
 
     case 2:
@@ -96,8 +98,9 @@ switch(sem)
     
     int Gpa1 = HS8251+MA8251+PH8252+BE8255+GE8291+CS8251+GE8261+CS8261;
     int totalCredits1 =4+4+3+3+3+3+2+2;
-    float cgpa1 = Gpa1 / totalCredits1;
-    printf("\n\n\n\n   Your CGPA is :%f ",cgpa1);
+    float cgpa1 = (float)Gpa1 / (float)totalCredits1;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa1);
+    break;
     
     case 3:
     printf("\n\n   Enter the grade for MA8351 : ");
@@ -138,8 +141,9 @@ switch(sem)
     
     int Gpa2 = MA8351+CS8351+CS8391+CS8392+EC8395+CS8381+CS8383+CS8382+HS8381;
     int totalCredits2 =4+4+3+3+3+2+2+2+1;
-    float cgpa2 = Gpa2 / totalCredits2;
-    printf("\n\n\n\n   Your CGPA is :%f ",cgpa2);
+    float cgpa2 = (float)Gpa2 / (float)totalCredits1;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa2);
+    break;
 }
 }
 
