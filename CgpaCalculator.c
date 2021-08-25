@@ -4,7 +4,7 @@
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
-int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461;
+int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
 printf("\t\t\t\t\t\tCGPA calculator");
 printf("\n\n\t\t\t\t\t\tGeneral Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
@@ -186,6 +186,45 @@ switch(sem)
     int totalCredits3 =4+3+3+3+3+3+2+2+1;
     float cgpa3 = (float)Gpa3 / (float)totalCredits3;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa3);
+    break;
+
+    case 5:
+    printf("\t\n Enter the grade for MA8551 : ");
+    scanf("%d",&MA8551);
+    MA8402 = CalculateSubjectGpa(4,MA8551);
+    
+    printf("\t\n Enter the grade for CS8591 : ");
+    scanf("%d",&CS8591);
+    CS8491 = CalculateSubjectGpa(3,CS8591);
+    
+    printf("\t\n Enter the grade for EC8691 : ");
+    scanf("%d",&EC8691);
+    CS8451 = CalculateSubjectGpa(3,EC8691);
+    
+    printf("\t\n Enter the grade for CS8501 : ");
+    scanf("%d",&CS8501);
+    CS8493 = CalculateSubjectGpa(3,CS8501);
+    
+    printf("\t\n Enter the grade for CS8592 : ");
+    scanf("%d",&CS8592);
+    CS8494 = CalculateSubjectGpa(3,CS8592);
+    
+    printf("\t\n Enter the grade for EC8681 : ");
+    scanf("%d",&EC8681);
+    CS8481 = CalculateSubjectGpa(2,EC8681);
+    
+    printf("\t\n Enter the grade for CS8592 : ");
+    scanf("%d",&CS8582);
+    CS8461 = CalculateSubjectGpa(2,CS8582);
+    
+    printf("\t\n Enter the grade for CS8581 : ");
+    scanf("%d",CS8581);
+    HS8461 = CalculateSubjectGpa(2,CS8581);
+    
+    int Gpa4 = MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
+    int totalCredits4 =4+3+3+3+3+2+2+2;
+    float cgpa4 = (float)Gpa4 / (float)totalCredits3;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa4);
     break;
 }
 }
