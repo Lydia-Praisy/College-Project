@@ -138,7 +138,7 @@ switch(sem)
     
     int Gpa2 = MA8351+CS8351+CS8391+CS8392+EC8395+CS8381+CS8383+CS8382+HS8381;
     int totalCredits2 =4+4+3+3+3+2+2+2+1;
-    float cgpa2 = Gpa2 / totalCredits1;
+    float cgpa2 = Gpa2 / totalCredits2;
     printf("\n\n\n\n   Your CGPA is :%f ",cgpa2);
 }
 }
