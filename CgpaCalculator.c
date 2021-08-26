@@ -4,7 +4,7 @@
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
-int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII,ProfessionalElectiveIII,CS8711,IT8761;
+int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII,ProfessionalElectiveIII,CS8711,IT8761,ProfessionalElectiveIV,ProfessionalElectiveV,ProjectWork;
 printf("\t\t\t\t\t\tCGPA calculator");
 printf("\n\n\t\t\t\t\t\tGeneral Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
@@ -804,6 +804,49 @@ switch(sem)
     int totalCredits6 =3+3+3+3+3+3+2+2;
     float cgpa6 = (float)Gpa6 / (float)totalCredits6;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa6);
+    break;
+    
+    case 8:
+    printf("\t\n   Enter the grade for Professional Elective IV : ");
+    scanf("%d",&ProfessionalElectiveIV);
+    if(ProfessionalElectiveIV>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        ProfessionalElectiveIV = CalculateSubjectGpa(3,ProfessionalElectiveIV);
+    }
+
+    printf("\t\n   Enter the grade for Professional Elective V : ");
+    scanf("%d",&ProfessionalElectiveV);
+    if(ProfessionalElectiveV>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        ProfessionalElectiveV = CalculateSubjectGpa(3,ProfessionalElectiveV);
+    }
+
+    printf("\t\n   Enter the grade for Project Work : ");
+    scanf("%d",&ProjectWork);
+    if(ProjectWork>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        ProjectWork = CalculateSubjectGpa(10,ProjectWork);
+    }
+    
+    int Gpa7 = ProfessionalElectiveIV+ProfessionalElectiveV+ProjectWork;
+    int totalCredits7 =3+3+10;
+    float cgpa7 = (float)Gpa7 / (float)totalCredits7;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa7);
     break;
 }
 }
