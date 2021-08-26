@@ -28,6 +28,7 @@ switch(sem)
     if(HS8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -39,6 +40,7 @@ switch(sem)
     if(MA8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -50,6 +52,7 @@ switch(sem)
     if(PH8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -61,6 +64,7 @@ switch(sem)
     if(CY8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -72,6 +76,7 @@ switch(sem)
     if(GE8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -83,6 +88,7 @@ switch(sem)
     if(GE8152>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -94,6 +100,7 @@ switch(sem)
     if(GE8161>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -105,6 +112,7 @@ switch(sem)
     if(BS8161>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -125,6 +133,7 @@ switch(sem)
     if(HS8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -136,6 +145,7 @@ switch(sem)
     if(MA8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -147,6 +157,7 @@ switch(sem)
     if(PH8252>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -158,6 +169,7 @@ switch(sem)
     if(BE8255>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -169,6 +181,7 @@ switch(sem)
     if(GE8291>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -180,6 +193,7 @@ switch(sem)
     if(CS8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -191,6 +205,7 @@ switch(sem)
     if(GE8261>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -202,6 +217,7 @@ switch(sem)
     if(CS8261>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -220,6 +236,7 @@ switch(sem)
     if(MA8351>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -231,6 +248,7 @@ switch(sem)
     if(CS8351>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -242,6 +260,7 @@ switch(sem)
     if(CS8391>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -253,6 +272,7 @@ switch(sem)
     if(CS8392>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -264,6 +284,7 @@ switch(sem)
     if(EC8395>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -275,6 +296,7 @@ switch(sem)
     if(CS8381>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -286,6 +308,7 @@ switch(sem)
     if(CS8383>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -297,6 +320,7 @@ switch(sem)
     if(CS8382>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -308,6 +332,7 @@ switch(sem)
     if(HS8381>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -326,6 +351,7 @@ switch(sem)
     if(MA8402>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -337,6 +363,7 @@ switch(sem)
     if(CS8491>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -348,6 +375,7 @@ switch(sem)
     if(CS8492>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -359,6 +387,7 @@ switch(sem)
     if(CS8451>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -370,6 +399,7 @@ switch(sem)
     if(CS8493>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -381,6 +411,7 @@ switch(sem)
     if(CS8494>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -392,6 +423,7 @@ switch(sem)
     if(CS8481>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -403,6 +435,7 @@ switch(sem)
     if(CS8461>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -414,6 +447,7 @@ switch(sem)
     if(HS8461>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -432,6 +466,7 @@ switch(sem)
     if(MA8551>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -443,6 +478,7 @@ switch(sem)
     if(CS8591>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -454,6 +490,7 @@ switch(sem)
     if(EC8691>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -465,6 +502,7 @@ switch(sem)
     if(CS8501>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -476,6 +514,7 @@ switch(sem)
     if(CS8592>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -487,6 +526,7 @@ switch(sem)
     if(EC8681>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -498,6 +538,7 @@ switch(sem)
     if(CS8582>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -509,6 +550,7 @@ switch(sem)
     if(CS8581>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
@@ -520,6 +562,7 @@ switch(sem)
     if(OpenElectiveI>5)
     {
         printf("\n\n   Wrong input, Try again");
+        break;
     }
     else
     {
