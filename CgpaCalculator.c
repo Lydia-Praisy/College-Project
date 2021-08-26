@@ -5,8 +5,9 @@ int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
 int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII,ProfessionalElectiveIII,CS8711,IT8761,ProfessionalElectiveIV,ProfessionalElectiveV,ProjectWork;
-printf("\t\t\t\t\t\tCGPA calculator");
-printf("\n\n\t\t\t\t\t\tGeneral Instruction");
+printf("\t\t\t\t\t\tCGPA calculator - 2017 Regulation");
+printf("\n\n\t\t\t\t\t\tComputer Science And Engineering");
+printf("\n\n\t\t\t\t\t\t      General Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
 printf("\n\n ! If grade is A+ - Press 2");
 printf("\n\n ! If grade is A - Press 3");
