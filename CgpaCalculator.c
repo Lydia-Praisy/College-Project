@@ -225,7 +225,7 @@ switch(sem)
     scanf("%d",&OpenElectiveI);
     OpenElectiveI = CalculateSubjectGpa(3,OpenElectiveI);
     
-    int Gpa4 = MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI;
+    int Gpa4 = MA8551+CS8591+EC8691+CS8501+CS8592+EC8681+CS8582+CS8581+OpenElectiveI;
     int totalCredits4 =4+3+3+3+3+2+2+2+3;
     float cgpa4 = (float)Gpa4 / (float)totalCredits3;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa4);
