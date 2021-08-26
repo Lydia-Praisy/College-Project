@@ -4,22 +4,28 @@
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
-int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII,ProfessionalElectiveIII,CS8711,IT8761,ProfessionalElectiveIV,ProfessionalElectiveV,ProjectWork;
-printf("\t\t\t\t\t\tCGPA calculator - 2017 Regulation");
-printf("\n\n\t\t\t\t\t\tComputer Science And Engineering");
-printf("\n\n\t\t\t\t\t\t      General Instruction");
+int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392;
+int EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
+int OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII;
+int ProfessionalElectiveIII,CS8711,IT8761,ProfessionalElectiveIV,ProfessionalElectiveV,ProjectWork;
+
+printf("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA calculator - 2017 Regulation");
+printf("\n\n\t\t\t\t\t\t\t\tComputer Science And Engineering");
+printf("\n\n\t\t\t\t\t\t\t\t\tGeneral Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
 printf("\n\n ! If grade is A+ - Press 2");
 printf("\n\n ! If grade is A - Press 3");
 printf("\n\n ! If grade is B+ - Press 4");
 printf("\n\n ! If grade is B - Press 5");
-printf("\n.....................................................................................................................");
+printf("\n........................................................................................................................................................................");
 printf("\n\nEnter the semester:");
-scanf("%d",&sem);                                                               
+scanf("%d",&sem);
+
 if((sem < 1) || (sem > 8))
 {
-printf("Invalid semester ");
-return 0;
+  printf("\n\nInvalid semester ");
+  getch();
+  return 0;
 }
 switch(sem)
 {
@@ -29,104 +35,112 @@ switch(sem)
     if(HS8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         HS8151 = CalculateSubjectGpa(4, HS8151);
     }
-    
+
     printf("\t\n   Enter the grade for MA8151 : ");
     scanf("%d",&MA8151);
     if(MA8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         MA8151 = CalculateSubjectGpa(4, MA8151);
     }
-    
+
     printf("\t\n   Enter the grade for PH8151 : ");
     scanf("%d",&PH8151);
     if(PH8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         PH8151 = CalculateSubjectGpa(3, PH8151);
     }
-    
+
     printf("\t\n   Enter the grade for CY8151 : ");
     scanf("%d",&CY8151);
     if(CY8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         CY8151 = CalculateSubjectGpa(3, CY8151);
     }
-    
+
     printf("\t\n   Enter the grade for GE8151 : ");
     scanf("%d",&GE8151);
     if(GE8151>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         GE8151 = CalculateSubjectGpa(3, GE8151);
     }
-    
+
     printf("\t\n   Enter the grade for GE8152 : ");
     scanf("%d",&GE8152);
     if(GE8152>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         GE8152 = CalculateSubjectGpa(4, GE8152);
     }
-    
+
     printf("\t\n   Enter the grade for GE8161 : ");
     scanf("%d",&GE8161);
     if(GE8161>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         GE8161 = CalculateSubjectGpa(2, GE8161);
     }
-    
+
     printf("\t\n   Enter the grade for BS8161 : ");
     scanf("%d",&BS8161);
     if(BS8161>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         BS8161 = CalculateSubjectGpa(2, BS8161);
     }
-    
+
     int Gpa = HS8151+MA8151+PH8151+CY8151+GE8151+GE8152+GE8161+BS8161;
     int totalCredits =4+4+3+3+3+4+2+2;
     float cgpa = (float)Gpa / (float)totalCredits;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa);
     break;
-    
-    
+
+
 
     case 2:
     printf("\n\n   Enter the grade for HS8251 : ");
@@ -134,66 +148,72 @@ switch(sem)
     if(HS8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         HS8251 = CalculateSubjectGpa(4, HS8251);
     }
-    
+
     printf("\t\n   Enter the grade for MA8251 : ");
     scanf("%d",&MA8251);
     if(MA8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         MA8251 = CalculateSubjectGpa(4, MA8251);
     }
-    
+
     printf("\t\n   Enter the grade for PH8252 : ");
     scanf("%d",&PH8252);
     if(PH8252>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         PH8252 = CalculateSubjectGpa(3, PH8252);
     }
-    
+
     printf("\t\n   Enter the grade for BE8255 : ");
     scanf("%d",&BE8255);
     if(BE8255>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         BE8255 = CalculateSubjectGpa(3, BE8255);
     }
-    
+
     printf("\t\n   Enter the grade for GE8291 : ");
     scanf("%d",&GE8291);
     if(GE8291>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         GE8291 = CalculateSubjectGpa(3, GE8291);
     }
-    
+
     printf("\t\n   Enter the grade for CS8251 : ");
     scanf("%d",&CS8251);
     if(CS8251>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -206,6 +226,7 @@ switch(sem)
     if(GE8261>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -218,6 +239,7 @@ switch(sem)
     if(CS8261>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -230,13 +252,14 @@ switch(sem)
     float cgpa1 = (float)Gpa1 / (float)totalCredits1;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa1);
     break;
-    
+
     case 3:
     printf("\n\n   Enter the grade for MA8351 : ");
     scanf("%d",&MA8351);
     if(MA8351>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -249,6 +272,7 @@ switch(sem)
     if(CS8351>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -261,6 +285,7 @@ switch(sem)
     if(CS8391>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -273,6 +298,7 @@ switch(sem)
     if(CS8392>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -285,6 +311,7 @@ switch(sem)
     if(EC8395>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -297,6 +324,7 @@ switch(sem)
     if(CS8381>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -309,6 +337,7 @@ switch(sem)
     if(CS8383>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -321,6 +350,7 @@ switch(sem)
     if(CS8382>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -333,6 +363,7 @@ switch(sem)
     if(HS8381>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -342,7 +373,7 @@ switch(sem)
 
     int Gpa2 = MA8351+CS8351+CS8391+CS8392+EC8395+CS8381+CS8383+CS8382+HS8381;
     int totalCredits2 =4+4+3+3+3+2+2+2+1;
-    float cgpa2 = (float)Gpa2 / (float)totalCredits1;
+    float cgpa2 = (float)Gpa2 / (float)totalCredits2;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa2);
     break;
 
@@ -352,6 +383,7 @@ switch(sem)
     if(MA8402>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -364,6 +396,7 @@ switch(sem)
     if(CS8491>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -376,6 +409,7 @@ switch(sem)
     if(CS8492>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -388,6 +422,7 @@ switch(sem)
     if(CS8451>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -400,6 +435,7 @@ switch(sem)
     if(CS8493>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -412,6 +448,7 @@ switch(sem)
     if(CS8494>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -424,6 +461,7 @@ switch(sem)
     if(CS8481>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -436,6 +474,7 @@ switch(sem)
     if(CS8461>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -448,6 +487,7 @@ switch(sem)
     if(HS8461>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -467,6 +507,7 @@ switch(sem)
     if(MA8551>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -479,6 +520,7 @@ switch(sem)
     if(CS8591>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -491,6 +533,7 @@ switch(sem)
     if(EC8691>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -503,6 +546,7 @@ switch(sem)
     if(CS8501>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -515,6 +559,7 @@ switch(sem)
     if(CS8592>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -527,6 +572,7 @@ switch(sem)
     if(EC8681>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -539,6 +585,7 @@ switch(sem)
     if(CS8582>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -551,6 +598,7 @@ switch(sem)
     if(CS8581>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -563,6 +611,7 @@ switch(sem)
     if(OpenElectiveI>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -575,7 +624,7 @@ switch(sem)
     float cgpa4 = (float)Gpa4 / (float)totalCredits4;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa4);
     break;
-    
+
 
     case 6:
     printf("\t\n   Enter the grade for CS8651 : ");
@@ -583,6 +632,7 @@ switch(sem)
     if(CS8651>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -595,6 +645,7 @@ switch(sem)
     if(CS8691>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -607,6 +658,7 @@ switch(sem)
     if(CS8601>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -619,6 +671,7 @@ switch(sem)
     if(CS8602>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -631,6 +684,7 @@ switch(sem)
     if(CS8603>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -643,6 +697,7 @@ switch(sem)
     if(ProfessionalElective1>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -655,6 +710,7 @@ switch(sem)
     if(CS8661>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -667,6 +723,7 @@ switch(sem)
     if(CS8662>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -679,6 +736,7 @@ switch(sem)
     if(CS8611>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -691,6 +749,7 @@ switch(sem)
     if(HS8581>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -710,6 +769,7 @@ switch(sem)
     if(MG8591>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -722,6 +782,7 @@ switch(sem)
     if(CS8792>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -734,6 +795,7 @@ switch(sem)
     if(CS8791>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -746,6 +808,7 @@ switch(sem)
     if(OpenElectiveII>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -758,6 +821,7 @@ switch(sem)
     if(ProfessionalElectiveII>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -770,6 +834,7 @@ switch(sem)
     if(ProfessionalElectiveIII>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -782,6 +847,7 @@ switch(sem)
     if(CS8711>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -794,25 +860,27 @@ switch(sem)
     if(IT8761>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         IT8761 = CalculateSubjectGpa(2,IT8761);
     }
-    
+
     int Gpa6 = MG8591+CS8792+CS8691+OpenElectiveII+ProfessionalElectiveII+ProfessionalElectiveIII+CS8711+IT8761;
     int totalCredits6 =3+3+3+3+3+3+2+2;
     float cgpa6 = (float)Gpa6 / (float)totalCredits6;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa6);
     break;
-    
+
     case 8:
     printf("\t\n   Enter the grade for Professional Elective IV : ");
     scanf("%d",&ProfessionalElectiveIV);
     if(ProfessionalElectiveIV>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -825,6 +893,7 @@ switch(sem)
     if(ProfessionalElectiveV>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
@@ -837,19 +906,22 @@ switch(sem)
     if(ProjectWork>5)
     {
         printf("\n\n   Wrong input, Try again");
+        getch();
         break;
     }
     else
     {
         ProjectWork = CalculateSubjectGpa(10,ProjectWork);
     }
-    
+
     int Gpa7 = ProfessionalElectiveIV+ProfessionalElectiveV+ProjectWork;
     int totalCredits7 =3+3+10;
     float cgpa7 = (float)Gpa7 / (float)totalCredits7;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa7);
     break;
 }
+
+return 0;
 }
 
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint)
