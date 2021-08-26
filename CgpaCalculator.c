@@ -223,7 +223,7 @@ switch(sem)
 
     printf("\t\n Enter the grade for Open Elective I : ");
     scanf("%d",&OpenElectiveI);
-    Open Elective I = CalculateSubjectGpa(3,OpenElectiveI);
+    OpenElectiveI = CalculateSubjectGpa(3,OpenElectiveI);
     
     int Gpa4 = MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI;
     int totalCredits4 =4+3+3+3+3+2+2+2+3;
