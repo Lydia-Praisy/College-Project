@@ -4,7 +4,7 @@
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
-int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581;
+int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII,ProfessionalElectiveIII,CS8711,IT8761;
 printf("\t\t\t\t\t\tCGPA calculator");
 printf("\n\n\t\t\t\t\t\tGeneral Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
@@ -701,6 +701,109 @@ switch(sem)
     int totalCredits5 =3+3+3+4+3+3+2+2+1+1;
     float cgpa5 = (float)Gpa5 / (float)totalCredits5;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa5);
+    break;
+
+    case 7:
+    printf("\t\n   Enter the grade for MG8591 : ");
+    scanf("%d",&MG8591);
+    if(MG8591>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        MG8591 = CalculateSubjectGpa(3,MG8591);
+    }
+
+    printf("\t\n   Enter the grade for CS8792 : ");
+    scanf("%d",&CS8792);
+    if(CS8792>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        CS8792 = CalculateSubjectGpa(3,CS8691);
+    }
+
+    printf("\t\n   Enter the grade for CS8791 : ");
+    scanf("%d",&CS8791);
+    if(CS8791>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        CS8791 = CalculateSubjectGpa(3,CS8791);
+    }
+
+    printf("\t\n   Enter the grade for Open Elective II : ");
+    scanf("%d",&OpenElectiveII);
+    if(OpenElectiveII>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        OpenElectiveII = CalculateSubjectGpa(3,OpenElectiveII);
+    }
+
+    printf("\t\n   Enter the grade for Professional Elective II : ");
+    scanf("%d",&ProfessionalElectiveII);
+    if(ProfessionalElectiveII>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        ProfessionalElectiveII = CalculateSubjectGpa(3,ProfessionalElectiveII);
+    }
+
+    printf("\t\n   Enter the grade for Professional Elective III: ");
+    scanf("%d",&ProfessionalElectiveIII);
+    if(ProfessionalElectiveIII>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        ProfessionalElectiveIII = CalculateSubjectGpa(3,ProfessionalElectiveIII);
+    }
+
+    printf("\t\n   Enter the grade for CS8711 : ");
+    scanf("%d",&CS8711);
+    if(CS8711>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        CS8711 = CalculateSubjectGpa(2,CS8711);
+    }
+
+    printf("\t\n   Enter the grade for IT8761 : ");
+    scanf("%d",&IT8761);
+    if(IT8761>5)
+    {
+        printf("\n\n   Wrong input, Try again");
+        break;
+    }
+    else
+    {
+        IT8761 = CalculateSubjectGpa(2,IT8761);
+    }
+    
+    int Gpa6 = MG8591+CS8792+CS8691+OpenElectiveII+ProfessionalElectiveII+ProfessionalElectiveIII+CS8711+IT8761;
+    int totalCredits6 =3+3+3+3+3+3+2+2;
+    float cgpa6 = (float)Gpa6 / (float)totalCredits6;
+    printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa6);
     break;
 }
 }
