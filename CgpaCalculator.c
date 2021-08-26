@@ -138,6 +138,7 @@ switch(sem)
     int totalCredits =4+4+3+3+3+4+2+2;
     float cgpa = (float)Gpa / (float)totalCredits;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa);
+    getch();
     break;
 
 
@@ -251,6 +252,7 @@ switch(sem)
     int totalCredits1 =4+4+3+3+3+3+2+2;
     float cgpa1 = (float)Gpa1 / (float)totalCredits1;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa1);
+    getch();
     break;
 
     case 3:
@@ -375,6 +377,7 @@ switch(sem)
     int totalCredits2 =4+4+3+3+3+2+2+2+1;
     float cgpa2 = (float)Gpa2 / (float)totalCredits2;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa2);
+    getch();
     break;
 
     case 4:
@@ -499,6 +502,7 @@ switch(sem)
     int totalCredits3 =4+3+3+3+3+3+2+2+1;
     float cgpa3 = (float)Gpa3 / (float)totalCredits3;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa3);
+    getch();
     break;
 
     case 5:
@@ -623,6 +627,7 @@ switch(sem)
     int totalCredits4 =4+3+3+3+3+2+2+2+3;
     float cgpa4 = (float)Gpa4 / (float)totalCredits4;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa4);
+    getch();
     break;
 
 
@@ -761,6 +766,7 @@ switch(sem)
     int totalCredits5 =3+3+3+4+3+3+2+2+1+1;
     float cgpa5 = (float)Gpa5 / (float)totalCredits5;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa5);
+    getch();
     break;
 
     case 7:
@@ -872,6 +878,7 @@ switch(sem)
     int totalCredits6 =3+3+3+3+3+3+2+2;
     float cgpa6 = (float)Gpa6 / (float)totalCredits6;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa6);
+    getch();
     break;
 
     case 8:
@@ -918,6 +925,7 @@ switch(sem)
     int totalCredits7 =3+3+10;
     float cgpa7 = (float)Gpa7 / (float)totalCredits7;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa7);
+    getch();
     break;
 }
 
