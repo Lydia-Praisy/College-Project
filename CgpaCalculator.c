@@ -191,35 +191,35 @@ switch(sem)
     case 5:
     printf("\t\n Enter the grade for MA8551 : ");
     scanf("%d",&MA8551);
-    MA8402 = CalculateSubjectGpa(4,MA8551);
+    MA8551 = CalculateSubjectGpa(4,MA8551);
     
     printf("\t\n Enter the grade for CS8591 : ");
     scanf("%d",&CS8591);
-    CS8491 = CalculateSubjectGpa(3,CS8591);
+    CS8591 = CalculateSubjectGpa(3,CS8591);
     
     printf("\t\n Enter the grade for EC8691 : ");
     scanf("%d",&EC8691);
-    CS8451 = CalculateSubjectGpa(3,EC8691);
+    EC8691 = CalculateSubjectGpa(3,EC8691);
     
     printf("\t\n Enter the grade for CS8501 : ");
     scanf("%d",&CS8501);
-    CS8493 = CalculateSubjectGpa(3,CS8501);
+    CS8501 = CalculateSubjectGpa(3,CS8501);
     
     printf("\t\n Enter the grade for CS8592 : ");
     scanf("%d",&CS8592);
-    CS8494 = CalculateSubjectGpa(3,CS8592);
+    CS8592 = CalculateSubjectGpa(3,CS8592);
     
     printf("\t\n Enter the grade for EC8681 : ");
     scanf("%d",&EC8681);
-    CS8481 = CalculateSubjectGpa(2,EC8681);
+    EC8681 = CalculateSubjectGpa(2,EC8681);
     
     printf("\t\n Enter the grade for CS8592 : ");
     scanf("%d",&CS8582);
-    CS8461 = CalculateSubjectGpa(2,CS8582);
+    CS8592 = CalculateSubjectGpa(2,CS8582);
     
     printf("\t\n Enter the grade for CS8581 : ");
     scanf("%d",CS8581);
-    HS8461 = CalculateSubjectGpa(2,CS8581);
+    CS8581 = CalculateSubjectGpa(2,CS8581);
 
     printf("\t\n Enter the grade for Open Elective I : ");
     scanf("%d",&OpenElectiveI);
