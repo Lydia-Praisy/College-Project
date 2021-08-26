@@ -4,7 +4,7 @@
 int CalculateSubjectGpa(int subjectCreditScore, int subjectGradePoint);
 int main()
 {
-int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
+int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392,EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,Open Elective I;
 printf("\t\t\t\t\t\tCGPA calculator");
 printf("\n\n\t\t\t\t\t\tGeneral Instruction");
 printf("\n\n\n\n ! If grade is O - Press 1");
@@ -220,9 +220,13 @@ switch(sem)
     printf("\t\n Enter the grade for CS8581 : ");
     scanf("%d",CS8581);
     HS8461 = CalculateSubjectGpa(2,CS8581);
+
+    printf("\t\n Enter the grade for Open Elective I : ");
+    scanf("%d",&Open Elective I);
+    Open Elective I = CalculateSubjectGpa(3,Open Elective I);
     
-    int Gpa4 = MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
-    int totalCredits4 =4+3+3+3+3+2+2+2;
+    int Gpa4 = MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581,Open Elective I;
+    int totalCredits4 =4+3+3+3+3+2+2+2+3;
     float cgpa4 = (float)Gpa4 / (float)totalCredits3;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa4);
     break;
