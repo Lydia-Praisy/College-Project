@@ -410,7 +410,7 @@ switch(sem)
     }
 
     printf("\t\n Enter the grade for HS8461 : ");
-    scanf("%d",HS8461);
+    scanf("%d",&HS8461);
     if(HS8461>5)
     {
         printf("\n\n   Wrong input, Try again");
@@ -505,7 +505,7 @@ switch(sem)
     }
 
     printf("\t\n Enter the grade for CS8581 : ");
-    scanf("%d",CS8581);
+    scanf("%d",&CS8581);
     if(CS8581>5)
     {
         printf("\n\n   Wrong input, Try again");
