@@ -219,7 +219,7 @@ switch(sem)
     }
     else
     {
-        CS8251 = CalculateSubjectGpa(2, CS8251);
+        CS8251 = CalculateSubjectGpa(3, CS8251);
     }
 
     printf("\t\n   Enter the grade for GE8261 : ");
