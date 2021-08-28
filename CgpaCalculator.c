@@ -6,7 +6,7 @@ int main()
 {
 int sem,HS8151,MA8151,PH8151,CY8151,GE8151,GE8152,GE8161,BS8161,HS8251,MA8251,PH8252,BE8255,GE8291,CS8251,GE8261,CS8261,MA8351,CS8351,CS8391,CS8392;
 int EC8395,CS8381,CS8383,CS8382,HS8381,MA8402,CS8491,CS8492,CS8451,CS8493,CS8494,CS8481,CS8461,HS8461,MA8551,CS8591,EC8691,CS8501,CS8592,EC8681,CS8582,CS8581;
-int OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElective1,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII;
+int OpenElectiveI,CS8651,CS8691,CS8601,CS8602,CS8603,ProfessionalElectiveI,CS8661,CS8662,CS8611,HS8581,MG8591,CS8792,CS8791,OpenElectiveII,ProfessionalElectiveII;
 int ProfessionalElectiveIII,CS8711,IT8761,ProfessionalElectiveIV,ProfessionalElectiveV,ProjectWork;
 
 printf("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA calculator - 2017 Regulation");
@@ -697,9 +697,9 @@ switch(sem)
         CS8603 = CalculateSubjectGpa(3,CS8603);
     }
 
-    printf("\t\n   Enter the grade for Professional Elective 1 : ");
-    scanf("%d",&ProfessionalElective1);
-    if(ProfessionalElective1>5)
+    printf("\t\n   Enter the grade for Professional Elective I : ");
+    scanf("%d",&ProfessionalElectiveI);
+    if(ProfessionalElectiveI>5)
     {
         printf("\n\n   Wrong input, Try again");
         getch();
@@ -707,7 +707,7 @@ switch(sem)
     }
     else
     {
-        ProfessionalElective1 = CalculateSubjectGpa(3,ProfessionalElective1);
+        ProfessionalElectiveI = CalculateSubjectGpa(3,ProfessionalElectiveI);
     }
 
     printf("\t\n   Enter the grade for CS8661 : ");
@@ -762,7 +762,7 @@ switch(sem)
         HS8581 = CalculateSubjectGpa(1,HS8581);
     }
 
-    int Gpa5 = CS8651+CS8691+CS8601+CS8602+CS8603+ProfessionalElective1+CS8661+CS8662+CS8611+HS8581;
+    int Gpa5 = CS8651+CS8691+CS8601+CS8602+CS8603+ProfessionalElectiveI+CS8661+CS8662+CS8611+HS8581;
     int totalCredits5 =3+3+3+4+3+3+2+2+1+1;
     float cgpa5 = (float)Gpa5 / (float)totalCredits5;
     printf("\n\n\n\n   Your CGPA is :%.2f ",cgpa5);
